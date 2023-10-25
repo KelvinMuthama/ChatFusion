@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 import "./globals.css";
 
-const monstserrat = Montserrat({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"], weight: "500" });
 
 export const metadata: Metadata = {
   title: "Chat Fusion",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={monstserrat.className}>{children}</body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }
