@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 
+import ToasterContext from "./context/ToasterContext";
+
 import "./globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: "500" });
@@ -18,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <ToasterContext />
+        {children}
+      </body>
     </html>
   );
 }
