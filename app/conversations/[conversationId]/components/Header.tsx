@@ -8,7 +8,7 @@ import Link from "next/link";
 import Avatar from "@/app/components/Avatar";
 import useOtherUser from "@/app/hooks/useOtherUser";
 
-import ProfileDrawer from "../../components/ProfileDrawer";
+import ProfileDrawer from "./ProfileDrawer";
 
 interface HeaderProps {
   conversation: Conversation & {
