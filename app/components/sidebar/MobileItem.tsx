@@ -44,7 +44,7 @@ const MobileItem: React.FC<MobileItemProps> = ({
         active && "bg-gray-100 text-black"
       )}
     >
-      <Icon />
+      <Icon size={20} />
     </Link>
   );
 };
